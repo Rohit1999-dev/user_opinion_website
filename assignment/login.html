@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login design form</title>
+		<!-- <link rel="stylesheet" type="text/css" href="/home/rohit/Desktop/Blog/routes/style.css"> -->
+		<style>
+body{
+	margin: 0;
+	padding: 0;
+	background: url("https://cdn.glitch.com/74174196-fbf8-4f3d-b51c-6334318ac153%2Fthumbnails%2Fback.jpg?v=1561368450181");
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	background-attachment: fixed;
+}
+.Loginbox img{
+	width: 110px;
+	margin-top: -15%;
+	margin-left: 33%;
+}
+.Loginbox{
+	width: 320px;
+	height: 420px;
+	margin-left: 35%;
+	background: #000;
+	color: #fff;
+	top: 20%;
+	position: absolute;
+	/*transform: translate(-50%,-50%);*/
+	box-sizing: border-box;
+}
+.Loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background-color: red;
+	color: green;
+}
+		</style>
+<body>
+	<div class="Loginbox">
+		<img src="https://cdn.glitch.com/74174196-fbf8-4f3d-b51c-6334318ac153%2Fthumbnails%2Favatar.png?v=1561368988007">
+		<div>
+				<center><h1>Login Here</h1></center><center>
+		<form action="/login" method="POST">
+			<p>Username</p>
+			<input type="text" name="email" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password"><br><br>
+			<input type="submit" name="" value="login"><br><br>
+		</form>
+
+		<form action="/signup">
+			<input type="submit" name="" value="signup"><br><br>
+		</form>
+	</center>
+		</div>
+	</div> 
+
+</body>
+</head>
+</html>

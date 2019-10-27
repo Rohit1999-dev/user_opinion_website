@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sigup</title>
+	<!-- <link rel="stylesheet" type="text/css" href="/home/rohit/Desktop/Blog/routes/signup.css"> -->
+	<style>
+		body{
+	background:url(https://cdn.glitch.com/74174196-fbf8-4f3d-b51c-6334318ac153%2Fthumbnails%2Fnature.jpg?v=1561360562976);
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg{
+	background-color: white;
+	margin: 10% 30% 0% 30%;
+	padding: 2px;
+}
+.bg h1{
+	text-align: center;	
+	color: red;
+}
+input{
+	border-color: blue;
+	font-size: 12px;
+}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<h1>.. Sign up Your Account ..</h1>
+		<center><div>
+		<form action="/signup" method="POST">
+			<input type="text" name="name" placeholder="Name" required>
+			<input type="email" name="email" placeholder="email" required><br><br>
+			<input type="text" name="password" placeholder="Create Password"required><br><br>
+			<input type="text" placeholder="Conform Password"required><br><br>
+
+			<input type="submit" name="" value="Register"><br><br>	
+			<input type="reset" name="" value="Reset"><br><br>
+		</form>
+	</div></center>
+	</div>
+</body>
+</html>

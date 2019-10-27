@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>www.education.com</title>
+	<style>
+		.navigation{
+			height: 150px;
+			width: 100%;
+			background-color: brown;
+			margin-bottom: 25px;
+		}
+		
+		ul{
+			list-style-type: none;
+			overflow: hidden;
+			border: 1px solid black;
+			background-color: green;
+		}
+		li{
+			float: left;
+		}
+		li a {
+		  display: block;
+		  color: brown;
+		  font-size: 22px;
+		  text-align: center;
+		  padding: 18px 20px;
+		  text-decoration: none;
+		}
+		li a:hover:not(.active) {
+  			background-color: black;
+		}
+		li a.active{
+			color: white;
+			background-color: purple;
+		}
+		.runDiv{
+			height: 200px;
+			width: 60%;
+			background-color:orange;
+		}
+	</style>
+</head>
+<body bgcolor="sky-blue">
+	<h1><center> Home Page</center></h1>
+	<ul>
+	  <li><a class="active" href="/login_home">Home</a></li>
+	</ul>	
+	<dir class="all_opinion"> <h1><center> All opinion</center></h1>
+		<% for (let i of data) { %>
+			<center><div class="runDiv">
+				<p> <%= i.user_opinion %> </p>
+			</div></center>
+			<% } %>
+	</dir>
+</body>
+</html>
